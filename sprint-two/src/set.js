@@ -1,7 +1,6 @@
 var Set = function() {
   var set = Object.create(setPrototype);
   set._storage = []; // fix me
-  set.count  =0;
   return set;
 };
 
@@ -9,7 +8,7 @@ var setPrototype = {};
 
 setPrototype.add = function(item) {
   if(!this._storage.includes(item)) {
-    this._storage[this.count++] = item;
+    this._storage.push(item);
   }
 };
 
