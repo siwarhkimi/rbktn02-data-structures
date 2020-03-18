@@ -7,6 +7,7 @@ var LinkedList = function() {
     var newNode = Node(value);
 
     if(this.head === null) {
+      this.head = newNode;
       this.tail = newNode;
     }
     else {
